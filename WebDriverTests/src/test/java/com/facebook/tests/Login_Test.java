@@ -31,7 +31,7 @@ public class Login_Test {
 	
 	@Test(groups={"p2", "field"}, dependsOnMethods="loadPage")
 	public void filloutEmailField(){
-		String email = "test@ukr.net";
+		String email = "test1@ukr.net";
 		WebElement emailFld = driver.findElement(By.cssSelector("#email"));
 		emailFld.sendKeys(email);
 		Assert.assertEquals(emailFld.getAttribute("value"), email);
@@ -39,7 +39,7 @@ public class Login_Test {
 	
 	@Test(groups={"p2", "field"}, dependsOnMethods="filloutEmailField")
 	public void filloutPassField(){
-		String password = "password";
+		String password = "password1";
 		WebElement passwordFld = driver.findElement(By.cssSelector("#pass"));
 		passwordFld.sendKeys(password);
 		Assert.assertEquals(passwordFld.getAttribute("value"), password);
